@@ -1,0 +1,145 @@
+.messageopen {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #FFB5B5, #FFDDDD);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    min-height: 80vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .message-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .message-preview {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .message-preview .message-sender {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .message-preview .message-content {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  .message-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .message-card {
+    position: relative;
+    padding: 245px 150px; 
+    border-radius: 20px;
+  }
+  
+  .back-button, .sender-name, .delete-button {
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .back-button {
+    top: -40px;
+    left: 0px;
+  }
+  
+  .sender-name {
+    top: -40px;
+    right: 0px;
+  }
+  
+  .delete-button {
+    bottom: -40px;
+    left: 0px;
+  }
+  
+  .back-button img, .delete-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .message-content {
+    margin-top: 30px;  /* 상단 버튼들과 겹치지 않도록 여유 공간 추가 */
+    margin-bottom: 30px;  /* 하단 버튼과 겹치지 않도록 여유 공간 추가 */
+  }
+  
+  .message-card .message-sender {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .message-card .message-content {
+    font-size: 18px;
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  
+  .message-detail button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

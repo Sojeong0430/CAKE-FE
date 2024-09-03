@@ -1,0 +1,139 @@
+.main-container {
+
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.content {
+  background: linear-gradient(to bottom, #FF91AB, #FFC0CB, #FFFACD);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: -70px;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+}
+
+.main-title {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: -20px;
+}
+
+.sub-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  background-color: white;
+  color: #FF1493;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.image-container {
+  position: absolute;
+
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+}
+
+.confetti-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.cake-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  max-width: 300px;
+}
+
+.process-section {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.process-title {
+  color: #FF1493;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.process-subtitle {
+  color: #FF69B4;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  flex: 1;
+  background-color: #FFF0F5;
+  margin: 0 5px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step h3 {
+  color: #FF1493;
+  margin: 0;
+}
+
+.delete-account-section {
+  text-align: right;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.delete-account-link {
+  color: #888;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.delete-account-link:hover {
+  text-decoration: underline;
+}
